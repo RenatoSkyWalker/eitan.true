@@ -1,0 +1,22 @@
+<%= form_with(model: atendente) do |form| %>
+  <% if atendente.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(atendente.errors.count, "error") %> prohibited this atendente from being saved:</h2>
+
+      <ul>
+        <% atendente.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :usuário, style: "display: block" %>
+    <%= form.text_area :usuário %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

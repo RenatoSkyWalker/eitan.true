@@ -1,0 +1,39 @@
+<p style="color: green"><%= notice %></p>
+ <div class="text-center">
+
+<h1>Medicamentos</h1>
+ <br>
+ </br>
+ <style>
+    body {
+     background-color: #d1f5d3; 
+    }
+    h1 {
+      text-align: center;
+      }
+ <div class="text-center">
+    <style>
+      body {
+     background-color: #d1f5d3; 
+      }
+    </style>
+
+
+<div id="medicamentos">
+  <% @medicamentos.each do |medicamento| %>
+    <%= render medicamento %>
+    <br>
+    </br>
+    <p>
+      <%= link_to "Visualizar Medicamento", medicamento %>
+    </p>
+  <% end %>
+</div>
+<br>
+</br>
+<%= link_to "Cadastrar Novo Medicamento", new_medicamento_path %>
+<br>
+</br>
+<br>
+</br>
+<%= link_to "Página Inicial", root_path, class: "btn btn-primary" %>

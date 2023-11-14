@@ -1,0 +1,22 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @medicamento %>
+
+<div class="container-sm">
+ 
+ <br>
+ <br>
+ <br>
+ </br>
+  </br>
+   
+  <%= link_to "Editar Medicamento", edit_medicamento_path(@medicamento) %> |
+  <br>
+   </br>
+    <br>
+  <%= link_to "Voltar para Medicamentos", medicamentos_path %>
+  <br>
+  </br>
+  <br>
+  <%= button_to "Destruir Medicamento", @medicamento, method: :delete %>
+</div>

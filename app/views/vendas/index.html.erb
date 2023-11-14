@@ -1,0 +1,23 @@
+<p style="color: green"><%= notice %></p>
+<div class="text-center">
+<h1>Vendas</h1>
+    <style>
+      body {
+     background-color: #d1f5d3; 
+      }
+    </style>
+
+
+<div id="vendas">
+  <% @vendas.each do |venda| %>
+    <%= render venda %>
+    <p>
+      <%= link_to "Visualizar Venda", venda %>
+    </p>
+  <% end %>
+  <br>
+</div>
+<br>
+<br>
+<br>
+<%= link_to "Registrar Nova Venda", new_venda_path %>

@@ -1,0 +1,23 @@
+
+ <div class="text-center">
+
+<h1>Novo Medicamento</h1>
+<style>
+    body {
+     background-color: #d1f5d3; 
+    }
+    h1 {
+      text-align: center;
+      }
+      
+  </style>
+<div class="container-md">
+ <br>
+ <%= render "form", medicamento: @medicamento %>
+
+<br>
+
+  
+  <div class="text-center">
+  <%= link_to "Voltar para Medicamentos", medicamentos_path %>
+</div>

@@ -1,0 +1,24 @@
+<p style="color: green"><%= notice %></p>
+
+    <style>
+      body {
+     background-color: #d1f5d3; 
+      }
+    </style>
+
+<%= render @atendente %>
+
+<div>
+  <div class="container-md">
+  <br>
+  <br>
+  <%= link_to "Editar característica", edit_atendente_path(@atendente) %> |
+  <br>
+  <br>
+  <%= link_to "Voltar para atendentes", atendentes_path %>
+ <br>
+ <br>
+  <%= button_to "Excluir registro", @atendente, method: :delete %>
+</div>
+<br>
+<%= link_to "Página Inicial", root_path, class: "btn btn-primary" %>

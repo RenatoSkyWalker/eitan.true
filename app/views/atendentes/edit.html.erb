@@ -1,0 +1,29 @@
+<div class="text-center">
+
+<h1>Editar Atendente</h1>
+
+    <style>
+      body {
+     background-color: #d1f5d3; 
+      }
+    </style>
+
+<%= render "form", atendente: @atendente %>
+
+<br>
+
+<div>
+  <br>
+  </br>
+  <br>
+  <%= link_to "Verificar Atendente", @atendente %> |
+  <br>
+  </br>
+  <br>
+  <%= link_to "Voltar para Atendentes", atendentes_path %>
+  <br>
+  </br>
+  <br>
+  </div>
+  <%= link_to "Página Inicial", root_path, class: "btn btn-primary" %>
+

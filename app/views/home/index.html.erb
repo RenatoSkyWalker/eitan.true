@@ -1,0 +1,32 @@
+<h1>Farmácia Constelações</h1>
+<br>
+
+<h2>Sua doença,nossa alegria!!</h2>
+<br>
+<br>
+    <style>
+      body {
+     background-color: #d1f5d3; 
+    }
+    h1 {
+      text-align: center;
+      color: $vermelho-500
+    }
+    h2 {
+      text-align: center;
+    }
+    </style>
+
+<div class="text-center">
+ <%= link_to medicamentos_path, class: "btn btn-danger" do %>
+  Medicamentos 
+ <% end %>
+
+ <%= link_to atendentes_path, class: "btn btn-danger" do %>
+  Atendentes
+ <% end %>
+  <%= link_to vendas_path, class: "btn btn-danger" do %>
+  Vendas
+<% end %>
+ </div>
+    
